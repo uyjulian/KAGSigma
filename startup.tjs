@@ -1,6 +1,8 @@
 
 var dm = Debug.message; // これで dm("message"); でコンソールに message を表示できる
 
+System.setArgument("-graphicsystem", "canvas");
+
 Storages.addAutoPath( "img/" );
 //Storages.addAutoPath( "sound/" );
 Storages.addAutoPath( "bgm/" );
@@ -59,5 +61,5 @@ function BGM_config() {
 }
 
 
-global.kag = new CanvasWindow( 1080, 1920 );
+global.kag = new CanvasWindow( 960, 720 );
 kag.process("first.ks");
