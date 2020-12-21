@@ -18,9 +18,9 @@ class RootOffscreen {
 		crossfadeShader_ = new ShaderProgram("default.vert","crossfade.frag");
 		universalTransShader_ = new ShaderProgram( "default.vert", "universal.frag" );
 		universalTransShader_.s_vague = (real)64 / 255.0;
-		defaultShader_ = new ShaderProgram("default_rev.vert","default.frag");
+		defaultShader_ = new ShaderProgram("default.vert","default.frag");
 		defaultShader_.a_opacity = 1.0;
-		defaultFillShader_ = new ShaderProgram("defaultfill_rev.vert","defaultfill.frag");
+		defaultFillShader_ = new ShaderProgram("defaultfill.vert","defaultfill.frag");
 	}
 
 	/**
